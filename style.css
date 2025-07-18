@@ -1,25 +1,45 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f0f2f5;
+  color: #333;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
   text-align: center;
+  padding: 2rem;
+  background: #0077b6;
+  color: white;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 nav {
-  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #023e8a;
+  padding: 1rem;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin: 0 1rem;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -28,40 +48,41 @@ nav a:hover {
 
 main {
   padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #023e8a;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icons a i {
+  font-size: 1.4rem;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-}
-
-input, textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  padding: 0.7rem;
-  font-size: 1rem;
-  background-color: #0077cc;
+  background: #0077b6;
   color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005fa3;
+  padding: 1rem;
 }
